@@ -150,16 +150,5 @@
     body {
       height: 140vh;
     }
-    .shape-1 {
-      height: 11em;
-      width: 11em;
-      right: -3em;
-      top: -3.5em;
-    }
-    .shape-2 {
-      height: 9em;
-      width: 9em;
-      bottom: -3.7em;
-      left: -2.5em;
-    }
+    
   }
