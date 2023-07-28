@@ -17,6 +17,7 @@ let getWeather = () => {
         let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${key}&units=metric`;
         fetch(url).then((resp)=> resp.json())
         .then((data) =>{
+            
             //console.log(data);
         //console.log(data.weather[0].icon);
         //console.log(data.weather[0].main);
