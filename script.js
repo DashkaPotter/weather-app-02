@@ -5,7 +5,7 @@ let cityRef = document.getElementById("city");
 key = '02cdabc14ee929cfa76e53d169ef9247';
 
 //function to fetch weather details from api and display them
-let getWeather = () => {
+async function getWeather (){
     let cityValue = cityRef.value;
 
     //if input field is empty
@@ -16,7 +16,7 @@ let getWeather = () => {
     //if input field is NOT empty
     else {
         let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${key}&units=metric`;
-        fetch(url).then((resp)=> resp.json())
+        await fetch(url).then((resp)=> resp.json())
         .then((data) =>{
         result.innerHTML = `
         <h2>${data.name}</h2>
