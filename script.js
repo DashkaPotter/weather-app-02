@@ -45,8 +45,9 @@ let getWeather = () => {
         .catch(()=>{
             result.innerHTML = `<h3 class='msg'>City not found</h3>`
         })
-         return true;
+         
     }
+    return true;
     }
     searchBtn.addEventListener("click", getWeather);
 window.addEventListener("load", getWeather);
