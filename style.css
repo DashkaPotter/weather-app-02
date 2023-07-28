@@ -150,5 +150,10 @@
     body {
       height: 140vh;
     }
-    
+    .shape-1 {
+      display:none;
+    }
+    .shape-2 {
+      display:none;
+    }
   }
