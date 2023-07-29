@@ -30,8 +30,8 @@ let getWeather = () => {
                 <h4 class="temp">${Math.round(data.main.temp_min)}&#176;</h4>
             </div>
             <div>
-                <h4 class="title">max</h4>
-                <h4 class="temp">${Math.round(data.main.temp_max)}&#176;</h4>
+                <h4 class="title">humidity</h4>
+                <h4 class="temp">${data.main.humidity}%</h4>
             </div>
         </div>`;
         })
